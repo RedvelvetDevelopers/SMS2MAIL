@@ -8,7 +8,7 @@ import android.support.v4.content.ContextCompat;
 import android.widget.EditText;
 
 /**
- * Created by Sananda on 10-07-2018.
+ * Created by Sananda on 10-07-2018
  */
 
 public class Utils {

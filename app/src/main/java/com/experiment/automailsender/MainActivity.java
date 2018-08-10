@@ -47,7 +47,7 @@ import javax.mail.internet.MimeMultipart;
 import static com.experiment.automailsender.Utlis.Utils.REQUEST_AUTHORIZATION;
 
 /**
- * Created by Sananda on 10-07-2018.
+ * Created by Sananda on 10-07-2018
  */
 
 public class MainActivity extends AppCompatActivity {

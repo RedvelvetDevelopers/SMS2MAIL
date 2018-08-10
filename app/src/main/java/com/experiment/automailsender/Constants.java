@@ -1,7 +1,7 @@
 package com.experiment.automailsender;
 
 /**
- * Created by Sananda on 10-07-2018.
+ * Created by Sananda on 10-07-2018
  */
 
 public class Constants {

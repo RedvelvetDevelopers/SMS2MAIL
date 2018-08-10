@@ -9,7 +9,7 @@ import android.os.Build;
 import android.os.IBinder;
 
 /**
- * Created by Sananda on 10-07-2018.
+ * Created by Sananda on 10-07-2018
  */
 
 public class BackgroundService extends Service {
