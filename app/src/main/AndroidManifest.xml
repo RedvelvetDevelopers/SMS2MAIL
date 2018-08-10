@@ -32,14 +32,14 @@
               android:screenOrientation="portrait"
               android:windowSoftInputMode="adjustResize"/>
 
-        <receiver android:name=".MySMSBroadCastReceiver">
+        <receiver android:name=".SMSBroadCastReceiver">
             <intent-filter android:priority="99999">
                 <action android:name="android.provider.Telephony.SMS_RECEIVED" />
             </intent-filter>
         </receiver>
 
         <service
-            android:name=".MyService"
+            android:name=".BackgroundService"
             android:enabled="true"
             android:exported="true"></service>
     </application>

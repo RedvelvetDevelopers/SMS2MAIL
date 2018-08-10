@@ -3,10 +3,8 @@ package com.experiment.automailsender;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.telephony.SmsMessage;
 import android.util.Log;
 import android.widget.Toast;
@@ -38,7 +36,7 @@ import javax.mail.internet.MimeMultipart;
  * Created by Sananda on 10-07-2018.
  */
 
-public class MySMSBroadCastReceiver extends BroadcastReceiver {
+public class SMSBroadCastReceiver extends BroadcastReceiver {
     LoginDataBaseAdapter loginDataBaseAdapter;
     private GoogleAccountCredential mCredential;
     private com.google.api.services.gmail.Gmail mService = null;
@@ -50,7 +48,7 @@ public class MySMSBroadCastReceiver extends BroadcastReceiver {
             GmailScopes.GMAIL_READONLY,
             GmailScopes.MAIL_GOOGLE_COM
     };
-    private static final String TAG = MySMSBroadCastReceiver.class.getSimpleName();
+    private static final String TAG = SMSBroadCastReceiver.class.getSimpleName();
 
     @Override
     public void onReceive(Context context, Intent intent) {

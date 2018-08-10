@@ -12,15 +12,15 @@ import android.os.IBinder;
  * Created by Sananda on 10-07-2018.
  */
 
-public class MyService extends Service {
+public class BackgroundService extends Service {
     private BroadcastReceiver mBroadcastReceiver = null;
-    public MyService() {
+    public BackgroundService() {
     }
 
     @Override
     public void onCreate() {
         super.onCreate();
-        mBroadcastReceiver = new MySMSBroadCastReceiver();
+        mBroadcastReceiver = new SMSBroadCastReceiver();
     }
 
     @Override

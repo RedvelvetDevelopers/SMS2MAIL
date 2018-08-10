@@ -193,7 +193,7 @@ private Message createMessageWithEmail(MimeMessage email)
             ActivityCompat.requestPermissions(MainActivity.this, new String[]   {Manifest.permission.RECEIVE_SMS},
                     PERMISSION_REQUEST_CODE);
         }else {
-            startService(new Intent(MainActivity.this, MyService.class));
+            startService(new Intent(MainActivity.this, BackgroundService.class));
         }
     }
 
@@ -206,7 +206,7 @@ private Message createMessageWithEmail(MimeMessage email)
                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                     Log.i("Permission", "Contact permission has now been granted. Showing result.");
                     Toast.makeText(this,"Contact Permission is Granted",Toast.LENGTH_SHORT).show();
-                    startService(new Intent(MainActivity.this, MyService.class));
+                    startService(new Intent(MainActivity.this, BackgroundService.class));
                 } else {
                     Log.i("Permission", "Contact permission was NOT granted.");
                 }
