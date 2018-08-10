@@ -57,7 +57,6 @@ public class SplashActivity extends Activity {
         iv.clearAnimation();
         iv.startAnimation(anim);
 
-
         new Handler().postDelayed(new Runnable() {
 
             @Override
